@@ -36,7 +36,7 @@ export const Form = (props: Props) => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <label>First Name</label>
 
-        {displayForm && <input name={'firstName'} type="text" ref={register} />}
+        {displayForm && <input type="text" {...register('firstName')} />}
 
         <div>
           <button type="button" onClick={setValueFunc}>
